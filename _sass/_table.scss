@@ -1,0 +1,9 @@
+.ui.table {
+  tbody td:first-of-type {
+    font-weight: bold;
+  }
+
+  td {
+    vertical-align: top;
+  }
+}

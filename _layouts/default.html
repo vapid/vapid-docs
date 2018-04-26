@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }} — {{ site.title }}</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+</head>
+<body>
+  <div class="ui sidebar inverted vertical visible menu">
+    <a href="https://www.vapid.com" class="item item-home item-nohover">
+      {% include logo.svg %}
+    </a>
+
+    <div class="item">
+      <a href="/" class="header">Getting Started</a>
+      <div class="menu">
+        <a href="/#basics" class="item">3 Things You Should Know</a>
+        <a href="/#install" class="item">How to Install</a>
+        <a href="/#hosting" class="item">Hosting Your Website</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <a href="/learn-more" class="header">Learn More</a>
+      <div class="menu">
+        <a href="/learn-more#sections" class="item">Sections</a>
+        <a href="/learn-more#forms" class="item">Forms</a>
+        <a href="/learn-more#conditionals" class="item">If / Unless</a>
+        <a href="/learn-more#assets" class="item">Sass and JS</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <a href="/content-types" class="header">Content Types</a>
+      <div class="menu">
+        <a href="/content-types#text" class="item">Text</a>
+        <a href="/content-types#html" class="item">HTML</a>
+        <a href="/content-types#choice" class="item">Choice</a>
+        <a href="/content-types#date" class="item">Date</a>
+        <a href="/content-types#image" class="item">Image</a>
+        <a href="/content-types#link" class="item">Link</a>
+        <a href="/content-types#number" class="item">Number</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <a href="/help" class="header">Help</a>
+      <div class="menu">
+        <a href="/help#using" class="item">Using the Software</a>
+        <a href="/help#development" class="item">Bugs and Open Source</a>
+        <a href="/help#documentation" class="item">Improve This Document</a>
+      </div>
+    </div>
+  </div>
+  <div class="pusher">
+    {{ content }}
+  </div>
+</body>
+</html>

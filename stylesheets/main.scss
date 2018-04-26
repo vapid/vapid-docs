@@ -1,0 +1,35 @@
+---
+---
+
+@import "vars";
+@import "mixins";
+@import "sidebar";
+@import "code";
+@import "table";
+
+.pusher {
+  width: 100%;
+  padding: 4.5rem 1.5rem 1.5rem;
+
+  .hidden.message + .ui.header {
+    margin-top: -.14285714em;
+  }
+
+  @include desktop {
+    padding: 1.5rem 3rem 3rem 18rem;
+    max-width: 80rem;
+  }
+}
+
+h2:target {
+  position: relative;
+  color: #2185d0;
+
+  &:before {
+    position: absolute;
+    left: -1.75rem;
+    content: "\f054";
+    font-family: Icons;
+    font-size: 0.9em;
+  }
+}
