@@ -143,7 +143,7 @@ Vapid can be deployed to any hosting service that supports Node.js. Here are a f
     </tr>
     <tr>
       <td><a href="https://glitch.com">Glitch</a></td>
-      <td>The easiest way to <a href="https://glitch.com/~vanilla-melody">take Vapid for a test-drive</a>.</td>
+      <td>The easiest way to <a href="https://glitch.com/edit/#!/remix/vapid?SECRET_KEY=change-me">take Vapid for a test-drive</a>.</td>
     </tr>
   </tbody>
 </table>
