@@ -53,7 +53,7 @@ In this case, passing the `multiple=true` parameter will give the user the abili
 
 _Note: This example could have been written as {{#section offices}} without the multiple=true parameter. Vapid assumes that pluralized words are multiple by default._
 
-#### Linking to Repeating Content
+#### Link to Repeating Content
 
 Vapid provides a way for you to link to individual records of repeating sections. Continuing the example above, we might want to create individual page for each office. For this, we can use the `{{_permalink}}` template tag (note the underscore before "permalink").
 
