@@ -2,12 +2,20 @@
 <html>
 <head>
   <title>{{ page.title }} — {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
 </head>
 <body>
-  <div class="ui sidebar inverted vertical visible menu">
-    <a href="https://www.vapid.com" class="item item-home item-nohover">
+  <nav class="ui fixed inverted top menu">
+    <a class="icon item" data-toggle="sidebar">
+      <i class="content icon"></i>
+    </a>
+    <a href="/" class="item item-home item-nohover"></a>
+  </nav>
+
+  <div class="ui sidebar inverted vertical menu">
+    <a href="/" class="item item-home item-nohover">
       {% include logo.svg %}
     </a>
 
@@ -56,6 +64,9 @@
     {{ content }}
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+  <script src="/javascripts/main.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110349810-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

@@ -3,6 +3,7 @@
 
 @import "vars";
 @import "mixins";
+@import "menus";
 @import "sidebar";
 @import "code";
 @import "table";
@@ -21,15 +22,17 @@
   }
 }
 
-h2:target {
-  position: relative;
-  color: #2185d0;
+@include desktop {
+  h2:target {
+    position: relative;
+    color: #2185d0;
 
-  &:before {
-    position: absolute;
-    left: -1.75rem;
-    content: "\f054";
-    font-family: Icons;
-    font-size: 0.9em;
+    &:before {
+      position: absolute;
+      left: -1.75rem;
+      content: "\f054";
+      font-family: Icons;
+      font-size: 0.9em;
+    }
   }
 }
