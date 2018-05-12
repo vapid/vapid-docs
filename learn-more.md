@@ -36,7 +36,7 @@ Similar to template tags, you can pass additional parameters to a section block.
 
 #### Repeating Content
 
-Occassionally, you'll want to create a section that has repeating content. For example, let’s say you want to give the ability to edit company office locations:
+Occasionally, you'll want to create a section that has repeating content. For example, let’s say you want to give the ability to edit company office locations:
 
 ```
 <ul>
@@ -52,6 +52,47 @@ Occassionally, you'll want to create a section that has repeating content. For e
 In this case, passing the `multiple=true` parameter will give the user the ability to enter multiple office locations, and the front-end will render them as a list.
 
 _Note: This example could have been written as {{#section offices}} without the multiple=true parameter. Vapid assumes that pluralized words are multiple by default._
+
+#### Linking to Repeating Content
+
+Vapid provides a way for you to link to individual records of repeating sections. Continuing the example above, we might want to create individual page for each office. For this, we can use the `{{_permalink}}` template tag (note the underscore before "permalink").
+
+```
+<ul>
+  {{#section offices multiple=true}}
+    <li>
+      <h5><a href="{{_permalink}}">{{name}}</a></h5>
+      {{city}}, {{state}}
+    </li>
+  {{/section}}
+</ul>
+```
+
+The `{{_permalink}}` tag tells Vapid to create a link for this individual office. It will look something like `/offices/1/office-name`, where "1" is the record ID of the office, and `office-name` is a slug of the Name field. (Vapid attempts to slug the Name or Title field, if avaiable).
+
+To render the individual detail page, just place a underscored file in the `www` with the same name as the section. In this case, we could create a file called `_offices.html` in the `www` directory.
+
+```
+{{#section offices}}
+  <h1>{{name}}</h1>
+
+  <ul class="info">
+    <li>{{address_1}}</li>
+    {{#if address_2}}
+      <li>{{address_2}}</li>
+    {{/if}}
+    <li>{{city}}, {{state}} {{postal_code}}</li>
+  </ul>
+
+  {{description type=html}}
+{{/section}}
+```
+
+You can see a few things here:
+
+* The `{{#section offices}}{{/section}}` is required.
+* Sections can contain different template tags on different pages. Vapid will sum them up in the dashboard.
+* This introduces the `{{#if}}{{/if}}` tag, explained <a href="#conditionals">later</a>.
 
 #### Ordering and Limiting
 
@@ -98,7 +139,6 @@ Additionally, you can choose to limit the number of records shown.
 
 Here, the offices are ordered by name, and only the first 5 are shown.
 
-
 ## Forms
 
 Want to create an email contact form? No problem, just use the `#form` tag. It's nearly identical to `#section`, except that it automatically creates an emailable form for you. **Zero configuration required**. Vapid will email the contents of the form to the email address supplied by your dashboard login using [Formspree](https://formspree.io/).
@@ -144,7 +184,6 @@ Another example would be to show a message if a section had no records.
   {{/unless}}
 </ul>
 ``` 
-{% endraw %}
 
 ## Sass and JS {#assets}
 
@@ -153,3 +192,33 @@ By default, Vapid creates two assets for you: `site.pack.scss` and `site.pack.js
 If you're not familiar with Webpack, no problem. Use these two files to add [Sass](https://sass-lang.com/) (or even plain CSS), and JavaScript to your project. Vapid will combine any files that you've imported (see the respective file comments for details), and output single `site.css` and `site.js` files.
 
 If you're not interested in using Webpack, that's fine. Just use CSS and JS files (without the `pack` extension).
+
+## Partials
+
+Partial templates (or "partials" for short), are a way for you to share pieces of code between templates. For example, you may want to have a common navigation menu on every page. Partials use the following syntax:
+
+```
+{{> partialName}}
+```
+
+In this case, the `partialName` corresponds a file named `_partialName.html` in your `www` directory.
+
+For example, let's say you want to include a common navigation meny on every page. You would might create a file named `_menu.html` in the `www` directory, then include it as `{{> menu}}` in every template.
+
+_Note: Partials may include Vapid template tags._
+
+## Timestamps
+
+Every record has two special fields: `{{_created_at}}` and `{{_updated_at}}`. They are datetime stamps of when the record was created, and when the record was last updated, respectively. They function very similarily to the `date` content type, in that you can pass in a `format` parameter to change the way they are displayed.
+
+```
+{{#section posts label="Blog Posts"}}
+  <article class="post">
+    <header>{{title}}</header>
+    <div class="summary">{{summary long=true}}</div>
+    <div class="meta">Posted on {{_created_at format="%m/%d/%Y"}}</div>
+  </article>
+{{/section}}
+```
+
+{% endraw %}
