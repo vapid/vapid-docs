@@ -13,12 +13,34 @@ The gist of Vapid is:
 3. You should be able to learn the basics in a few minutes.
 4. Content and files that you've created here should be portable to your next platform.
 
-Before we get to installing Vapid, here are the basics...
+## How to Install {#install}
+
+Currently, Vapid is available through [npm](https://www.npmjs.com/).
+
+```
+npm install -g vapid-cli
+```
+
+_Note: A desktop GUI application is coming soon—please add yourself to [the mailing list](https://www.vapid.com) if you'd like to be notified when that is available._
+
+Once you've installed Vapid, you can create a new website project by using the following terminal command:
+
+```
+vapid new path/to/project/folder
+```
+
+Then, you'll be able to start the development web server:
+
+```
+cd path/to/project/folder
+vapid start .
+```
 
 ## 3 Things You Should Know {#basics}
 
 #### Files and Folders
-After you install Vapid, you'll have the opportunity to create a new website. This is what the website project folder will look like by default:
+
+If you've installed Vapid, and issued the `vapid new path/to/project/folder` command, you'll notice that a new folder was created, containing the following:
 
 ```
 data/
@@ -97,29 +119,6 @@ Now, there's one other thing you should know about sections: they can have repea
 In this case, the dashboard will give the user the ability to enter _multiple_ office locations, and the front-end will render them as a list.
 
 _Note: This example could have been written as `{{#section offices}}` without the `multiple=true` parameter. Vapid assumes that pluralized words are multiple by default._
-
-## How to Install {#install}
-
-Currently, Vapid is available through [npm](https://www.npmjs.com/).
-
-```
-npm install -g vapid-cli
-```
-
-_Note: A desktop GUI application is coming soon—please add yourself to [the mailing list](https://www.vapid.com) if you'd like to be notified when that is available._
-
-Once you've installed Vapid, you can create a new website project by using the following terminal command:
-
-```
-vapid new path/to/project/folder
-```
-
-Then, you'll be able to start the development web server:
-
-```
-cd path/to/project/folder
-vapid start .
-```
 
 ## Hosting Your Website {#hosting}
 
