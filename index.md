@@ -36,6 +36,8 @@ cd path/to/project/folder
 vapid start .
 ```
 
+Now, you can start developing. Open `path/to/project/folder` in your favorite text editor (see below for what file/folders are important). And preview your website: the public-facing site at `http://localhost:4567`; and the private dashboard at `http://localhost:4567/dashboard`.
+
 ## 3 Things You Should Know {#basics}
 
 #### Files and Folders
