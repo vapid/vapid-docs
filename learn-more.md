@@ -207,6 +207,12 @@ For example, let's say you want to include a common navigation meny on every pag
 
 _Note: Partials may include Vapid template tags._
 
+## Custom Error Page {#errors}
+
+Vapid allows you to customize the error page for Page Not Found (404) errors. Just add a template named `_error.html` to your `www` folder.
+
+_Note: Custom error pages may not include any template tags._
+
 ## Timestamps
 
 Every record has two special fields: `{{_created_at}}` and `{{_updated_at}}`. They are datetime stamps of when the record was created, and when the record was last updated, respectively. They function very similarily to the `date` content type, in that you can pass in a `format` parameter to change the way they are displayed.
