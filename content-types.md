@@ -42,6 +42,12 @@ All content types have the following parameters unless specified differently bel
       <td>Changes the dashboard form label.</td>
     </tr>
     <tr>
+      <td>default</td>
+      <td></td>
+      <td>any text</td>
+      <td>Set a default value.</td>
+    </tr>
+    <tr>
       <td>placeholder</td>
       <td></td>
       <td>any text</td>
