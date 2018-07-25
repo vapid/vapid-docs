@@ -139,6 +139,23 @@ Additionally, you can choose to limit the number of records shown.
 
 Here, the offices are ordered by name, and only the first 5 are shown.
 
+####  Drag n' drop sorting
+
+On occassion, you may want to impose a more arbitrary ordering of records. By adding `sortable=true` to any repeating section, it's index page will now allow drag n' drop record recording.
+
+```
+<ul>
+  {{#section offices sortable=true}}
+    <li>
+      <h5>{{name}}</h5>
+      {{city}}, {{state}}
+    </li>
+  {{/section}}
+</ul>
+```
+
+Here, the offices will be ordered according to the order they appear on the dashboard index page (changeable via drag n' drop).
+
 ## Forms
 
 Want to create an email contact form? No problem, just use the `#form` tag. It's nearly identical to `#section`, except that it automatically creates an emailable form for you. **Zero configuration required**. Vapid will email the contents of the form to the email address supplied by your dashboard login using [Formspree](https://formspree.io/).
