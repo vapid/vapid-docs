@@ -94,7 +94,7 @@ You can see a few things here:
 * Sections can contain different template tags on different pages. Vapid will sum them up in the dashboard.
 * This introduces the `{{#if}}{{/if}}` tag, explained <a href="#conditionals">later</a>.
 
-#### Ordering and Limiting
+#### Order, Limit and Offset
 
 For repeating sections, you may want to order the records in a specific way. To do so, you can use the `order` parameter.
 
@@ -124,11 +124,11 @@ In the example above, the offices that you create in the dashboard will be order
 
 In the example above, the offices will first be ordered by `state`, then then by `name` in reverse order. Field prefixed with a `-` will be sorted in descending order.
 
-Additionally, you can choose to limit the number of records shown.
+Additionally, you can choose to limit the number of records shown, or offset the starting record.
 
 ```
 <ul>
-  {{#section offices order=name limit=5}}
+  {{#section offices order=name limit=5 offset=1}}
     <li>
       <h5>{{name}}</h5>
       {{city}}, {{state}}
@@ -137,7 +137,7 @@ Additionally, you can choose to limit the number of records shown.
 </ul>
 ```
 
-Here, the offices are ordered by name, and only the first 5 are shown.
+Here, the offices are ordered by name, and only the first 5 are shown, starting at the second record.
 
 ####  Drag n' drop sorting
 
