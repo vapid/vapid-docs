@@ -9,6 +9,15 @@
 @import "table";
 @import "type";
 
+a {
+  color: #F71B81;
+
+  &:hover {
+    color: #F71B81;
+    text-decoration: underline;
+  }
+}
+
 .pusher {
   width: 100%;
   padding: 4.5rem 1.5rem 1.5rem;
@@ -26,7 +35,7 @@
 @include desktop {
   h2:target {
     position: relative;
-    color: #2185d0;
+    color: #F71B81;
 
     &:before {
       position: absolute;
