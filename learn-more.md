@@ -27,7 +27,7 @@ Similar to template tags, you can pass additional parameters to a section block.
 
 ```
 {{#section about label="About Me"}}
-  <div>
+<div>
   <h2>{{title}}</h2>
   {{body type=html}}
 </div>
