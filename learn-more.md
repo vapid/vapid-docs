@@ -10,7 +10,7 @@ This page provides a little deeper dive into the topics discussed in [Getting St
 
 By default, Vapid places fields into the General section of your dashboard. After a while, though, this can become unwieldy.
 
-Sections are an organizational unit of Vapid. They allow you to group tags together, and display them under a separate dashboard link, other than Genral.
+Sections are an organizational unit of Vapid. They allow you to group tags together, and display them under a separate dashboard link, other than General.
 
 To create a section, just enclose template tags within a section block:
 
