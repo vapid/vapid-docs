@@ -68,7 +68,7 @@ Vapid provides a way for you to link to individual records of repeating sections
 </ul>
 ```
 
-The `{{_permalink}}` tag tells Vapid to create a link for this individual office. It will look something like `/offices/1/office-name`, where "1" is the record ID of the office, and `office-name` is a slug of the Name field. (Vapid attempts to slug the Name or Title field, if avaiable).
+The `{{_permalink}}` tag tells Vapid to create a link for this individual office. It will look something like `/offices/1/office-name`, where "1" is the record ID of the office, and `office-name` is a slug of the Name field. (Vapid attempts to slug the Name or Title field, if available).
 
 To render the individual detail page, just place a underscored file in the `www` with the same name as the section. In this case, we could create a file called `_offices.html` in the `www` directory.
 
