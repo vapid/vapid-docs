@@ -220,7 +220,7 @@ Partial templates (or "partials" for short), are a way for you to share pieces o
 
 In this case, the `partialName` corresponds a file named `_partialName.html` in your `www` directory.
 
-For example, let's say you want to include a common navigation meny on every page. You would might create a file named `_menu.html` in the `www` directory, then include it as `{{> menu}}` in every template.
+For example, let's say you want to include a common navigation menu on every page. You would might create a file named `_menu.html` in the `www` directory, then include it as `{{> menu}}` in every template.
 
 _Note: Partials may include Vapid template tags._
 
