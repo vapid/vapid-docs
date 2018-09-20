@@ -68,7 +68,7 @@ Vapid provides a way for you to link to individual records of repeating sections
 </ul>
 ```
 
-The `{{_permalink}}` tag tells Vapid to create a link for this individual office. It will look something like `/offices/1/office-name`, where "1" is the record ID of the office, and `office-name` is a slug of the Name field. (Vapid attempts to slug the Name or Title field, if avaiable).
+The `{{_permalink}}` tag tells Vapid to create a link for this individual office. It will look something like `/offices/1/office-name`, where "1" is the record ID of the office, and `office-name` is a slug of the Name field. (Vapid attempts to slug the Name or Title field, if available).
 
 To render the individual detail page, just place a underscored file in the `www` with the same name as the section. In this case, we could create a file called `_offices.html` in the `www` directory.
 
@@ -220,7 +220,7 @@ Partial templates (or "partials" for short), are a way for you to share pieces o
 
 In this case, the `partialName` corresponds a file named `_partialName.html` in your `www` directory.
 
-For example, let's say you want to include a common navigation meny on every page. You would might create a file named `_menu.html` in the `www` directory, then include it as `{{> menu}}` in every template.
+For example, let's say you want to include a common navigation menu on every page. You would might create a file named `_menu.html` in the `www` directory, then include it as `{{> menu}}` in every template.
 
 _Note: Partials may include Vapid template tags._
 
