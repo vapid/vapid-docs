@@ -8,7 +8,7 @@ Vapid is a work in progress. If you have any questions, or would like to help ma
 
 ## Using the Software {#using}
 
-If you are having difficulty using Vapid, please submit questions to [Stack Overflow](https://stackoverflow.com/). Additionally, if you are someone that feel confident using Vapid, please consider answering questions there too.
+If you are having difficulty using Vapid, please submit questions to the [Vapid forums](https://forums.vapid.com/). Additionally, if you are someone that feels confident using Vapid, please consider answering questions there too.
 
 ## Bugs and Open Source {#development}
 
