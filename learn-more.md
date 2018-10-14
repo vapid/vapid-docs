@@ -170,6 +170,46 @@ Want to create an email contact form? No problem, just use the `#form` tag. It's
 
 _Note: Only certain tag content types are available for forms (e.g. text, choice, date, link, and number). Unsupported content types will automatically fallback to text._
 
+The form tag accepts the following options:
+
+<table class="ui striped table">
+  <thead>
+    <tr>
+      <th>Parameter name</th>
+      <th>Default value</th>
+      <th>Possible values</th>
+      <th>Description</th>
+    </tr>
+    <tbody></tbody>
+  </thead>
+  <tbody>
+    <tr>
+      <td>subject</td>
+      <td>New submission from example.com</td>
+      <td>any text</td>
+      <td>Set the subject line of the email.</td>
+    </tr>
+    <tr>
+      <td>receipient</td>
+      <td>admin@example.com</td>
+      <td>any email address, or hash if you're a [Formspree Gold subscriber](https://formspree.io/#plans</td>
+      <td>Override the recipient email address. By default, it uses the email you used to create your dashboard login.</td>
+    </tr>
+    <tr>
+      <td>next</td>
+      <td>The URL of the page that hosts the form</td>
+      <td>any URL</td>
+      <td>Override the page that Formspree redirects to after the form is submitted.</td>
+    </tr>
+    <tr>
+      <td>action</td>
+      <td>https://formspree.io/admin@example.com</td>
+      <td>any URL</td>
+      <td>Override the form action.</td>
+    </tr>
+  </tbody>
+</table>
+
 ## If / Unless {#conditionals}
 
 Vapid's templating system supports simple conditional logic with `#if` and `#unless` tags. The two allow you to show or hide content, if the variable in question has value.
