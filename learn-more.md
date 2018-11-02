@@ -190,14 +190,14 @@ The form tag accepts the following options:
       <td>Set the subject line of the email.</td>
     </tr>
     <tr>
-      <td>receipient</td>
+      <td>recipient</td>
       <td>admin@example.com</td>
-      <td>any email address, or hash if you're a [Formspree Gold subscriber](https://formspree.io/#plans</td>
+      <td>any email address, or hash if you're a [Formspree Gold subscriber](https://formspree.io/#plans)</td>
       <td>Override the recipient email address. By default, it uses the email you used to create your dashboard login.</td>
     </tr>
     <tr>
       <td>next</td>
-      <td>The URL of the page that hosts the form</td>
+      <td>The URL of the page that hosts the form.</td>
       <td>any URL</td>
       <td>Override the page that Formspree redirects to after the form is submitted.</td>
     </tr>
@@ -214,7 +214,7 @@ The form tag accepts the following options:
 
 Vapid's templating system supports simple conditional logic with `#if` and `#unless` tags. The two allow you to show or hide content, if the variable in question has value.
 
-For example, let's say you wanted to create an weather alert, but only wanted to show it if there was something interesting to say about the weather.
+For example, let's say you wanted to create a weather alert, but only wanted to show it if there was something interesting to say about the weather.
 
 ```
 {{#if weather}}
@@ -244,7 +244,7 @@ Another example would be to show a message if a section had no records.
 
 ## Sass and JS {#assets}
 
-By default, Vapid creates two assets for you: `site.pack.scss` and `site.pack.js`. If you're familiar with [Webpack](https://webpack.js.org/), then know that any Sass or JS file with `pack` added to the extension will be automatically compiled.
+By default, Vapid creates two assets for you: `site.pack.scss` and `site.pack.js`. If you're familiar with [Webpack](https://webpack.js.org/), you'll already know that any Sass or JS file with `pack` added to the extension will be automatically compiled.
 
 If you're not familiar with Webpack, no problem. Use these two files to add [Sass](https://sass-lang.com/) (or even plain CSS), and JavaScript to your project. Vapid will combine any files that you've imported (see the respective file comments for details), and output single `site.css` and `site.js` files.
 
@@ -252,7 +252,7 @@ If you're not interested in using Webpack, that's fine. Just use CSS and JS file
 
 ## Partials
 
-Partial templates (or "partials" for short), are a way for you to share pieces of code between templates. For example, you may want to have a common navigation menu on every page. Partials use the following syntax:
+Partial templates (or "partials" for short) are a way for you to share pieces of code between templates. Partials use the following syntax:
 
 ```
 {{> partialName}}
@@ -260,7 +260,7 @@ Partial templates (or "partials" for short), are a way for you to share pieces o
 
 In this case, the `partialName` corresponds a file named `_partialName.html` in your `www` directory.
 
-For example, let's say you want to include a common navigation menu on every page. You would might create a file named `_menu.html` in the `www` directory, then include it as `{{> menu}}` in every template.
+For example, let's say you want to include a common navigation menu on every page. You could create a file named `_menu.html` in the `www` directory, then include it as `{{> menu}}` in every template.
 
 _Note: Partials may include Vapid template tags._
 
