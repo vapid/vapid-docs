@@ -250,6 +250,35 @@ If you're not familiar with Webpack, no problem. Use these two files to add [Sas
 
 If you're not interested in using Webpack, that's fine. Just use CSS and JS files (without the `pack` extension).
 
+## Image Resizing {#images}
+
+Never worry about a client uploading a 10MB, 4000px-wide image again. By passing a `width` or `height` attribute into Vapid's image directive, you can resize any JPG, PNG, or WEBP photo:
+
+```
+{{example_1 type=photo width=800 alt="Example 1"}}
+```
+
+Specify both width and height attributes to automatically crop photos:
+
+```
+{{example_2 type=photo width=100 height=100 alt="Cropped thumbnail"}}
+```
+
+Great for responsive images:
+
+```
+<picture>
+  <source srcset="{{photo type=image width=1000 tag=false}}" media="(min-width: 480px)">
+  <img src="{{photo type=image width=480 tag=false alt="Responsive"}}">
+</picture>
+```
+
+Note: Using a Vapid image directive is not required. You can resize _any_ image in your site by appending `w` and/or `h` query string parameters:
+
+```
+<img src="/images/myphoto.jpg?w=800&h=600" alt="My photo">
+```
+
 ## Partials
 
 Partial templates (or "partials" for short) are a way for you to share pieces of code between templates. Partials use the following syntax:
