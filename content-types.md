@@ -194,6 +194,18 @@ The ability to upload images.
     </tr>
     <tbody>
       <tr>
+        <td>width</td>
+        <td></td>
+        <td>any integer</td>
+        <td>Resizes the image width, and adds a <code>width</code> attribute to the image.</td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td></td>
+        <td>any integer</td>
+        <td>Resizes the image height, and adds a <code>height</code> attribute to the image.</td>
+      </tr>
+      <tr>
         <td>alt</td>
         <td></td>
         <td>any string</td>
