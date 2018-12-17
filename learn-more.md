@@ -207,6 +207,12 @@ The form tag accepts the following options:
       <td>any URL</td>
       <td>Override the form action.</td>
     </tr>
+    <tr>
+      <td>submit</td>
+      <td>Submit</td>
+      <td>any text</td>
+      <td>Override the submit button text.</td>
+    </tr>
   </tbody>
 </table>
 
