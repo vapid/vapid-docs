@@ -18,7 +18,7 @@ The gist of Vapid is:
 Currently, Vapid is available through [npm](https://www.npmjs.com/).
 
 ```
-npm install -g vapid-cli
+npm install -g @vapid/cli
 ```
 
 _Note: A desktop GUI application is coming soon—please add yourself to [the mailing list](https://www.vapid.com) if you'd like to be notified when that is available._
