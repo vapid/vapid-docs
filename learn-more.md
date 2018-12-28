@@ -297,6 +297,13 @@ In this case, the `partialName` corresponds a file named `_partialName.html` in 
 
 For example, let's say you want to include a common navigation menu on every page. You could create a file named `_menu.html` in the `www` directory, then include it as `{{> menu}}` in every template.
 
+If you'd like to organize your partials, feel free to store them in a subdirectory:
+
+```
+# some/directory/_menu.html
+{{> some/directory/menu}}
+```
+
 _Note: Partials may include Vapid template tags._
 
 ## Custom Error Page {#errors}
