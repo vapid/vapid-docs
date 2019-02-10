@@ -110,6 +110,12 @@ HTML content, entered through a WYSIWYG editor, Markdown, or raw.
         <td>wysiwyg | markdown | false</td>
         <td>Depending on the option, it will render a different HTML editor.</td>
       </tr>
+      <tr>
+        <td>images</td>
+        <td>false</td>
+        <td>true | false</td>
+        <td>Allow the user to upload/embed images into content. <em>Note: this only works with the WYSIWYG editor.<em></td>
+      </tr>
     </tbody>
   </thead>
 </table>
