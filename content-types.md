@@ -114,7 +114,7 @@ HTML content, entered through a WYSIWYG editor, Markdown, or raw.
         <td>images</td>
         <td>false</td>
         <td>true | false</td>
-        <td>Allow the user to upload/embed images into content. <em>Note: this only works with the WYSIWYG editor.<em></td>
+        <td>Allow the user to upload/embed images into content. <em>Note: this only works with the WYSIWYG editor.</em></td>
       </tr>
     </tbody>
   </thead>
