@@ -327,3 +327,21 @@ Every record has two special fields: `{{_created_at}}` and `{{_updated_at}}`. Th
 ```
 
 {% endraw %}
+
+## Reorder Tabs/Fields {#priority}
+
+By default, the dashboard renders fields in the order they appear in the HTML, and sections in alphabetical order. By specifying the `priority` option, you can change their order to your liking. Sections/fields that don't specify a priority will appear last.
+
+```
+{{#section offices priority=1}}
+  {{location}}
+{{/section}}
+
+{{#section about}}
+  <article class="post">
+    {{photo type=image}}
+    <header>{{title priority=1}}</header>
+    <div class="summary">{{summary long=true priority=2}}</div>
+  </article>
+{{/section}}
+```

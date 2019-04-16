@@ -59,6 +59,12 @@ All content types have the following parameters unless specified differently bel
       <td>true | false</td>
       <td>All dashboard input fields are required by default.</td>
     </tr>
+    <tr>
+      <td>priority</td>
+      <td></td>
+      <td>any number</td>
+      <td>By default, the dashboard renders fields in the order they appear in the HTML. By specifying the `priority` option, you can change their order to your liking.</td>
+    </tr>
   </tbody>
 </table>
 
