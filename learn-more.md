@@ -122,7 +122,7 @@ In the example above, the offices that you create in the dashboard will be order
 </ul>
 ```
 
-In the example above, the offices will first be ordered by `state`, then then by `name` in reverse order. Field prefixed with a `-` will be sorted in descending order.
+In the example above, the offices will first be ordered by `state`, then by `name` in reverse order. Field prefixed with a `-` will be sorted in descending order.
 
 Additionally, you can choose to limit the number of records shown, or offset the starting record.
 
