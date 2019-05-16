@@ -227,7 +227,7 @@ The ability to upload images.
         <td>class</td>
         <td></td>
         <td>any string</td>
-        <td>Adds an <code>class</code> attribute to the image.</td>
+        <td>Adds a <code>class</code> attribute to the image.</td>
       </tr>
       <tr>
         <td>tag</td>
@@ -297,7 +297,7 @@ Number inputs.
         <td>range</td>
         <td></td>
         <td>false</td>
-        <td>If true, renders an <code>type="range"</code> input. If false, <code>type="number"</code>.</td>
+        <td>If true, renders a <code>type="range"</code> input. If false, <code>type="number"</code>.</td>
       </tr>
     </tbody>
   </thead>
