@@ -326,8 +326,6 @@ Every record has two special fields: `{{_created_at}}` and `{{_updated_at}}`. Th
 {{/section}}
 ```
 
-{% endraw %}
-
 ## Reorder Tabs/Fields {#priority}
 
 By default, the dashboard renders fields in the order they appear in the HTML, and sections in alphabetical order. By specifying the `priority` option, you can change their order to your liking. Sections/fields that don't specify a priority will appear last.
@@ -345,3 +343,5 @@ By default, the dashboard renders fields in the order they appear in the HTML, a
   </article>
 {{/section}}
 ```
+
+{% endraw %}
