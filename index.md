@@ -148,4 +148,6 @@ Vapid can be deployed to any hosting service that supports Node.js. Here are a f
     </tr>
   </tbody>
 </table>
+
+Or, use the `vapid build` command to export to a static website, and host on S3, [Surge](https://surge.sh/), or the like.
 {% endraw %}
