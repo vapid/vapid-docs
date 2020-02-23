@@ -135,10 +135,6 @@ Vapid can be deployed to any hosting service that supports Node.js. Here are a f
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://www.vapid.com">Vapid</a></td>
-      <td>Zero-config service that can be accessed via the <code>vapid deploy</code> command. Note: it is currently in private beta.</td>
-    </tr>
-    <tr>
       <td><a href="https://heroku.com">Heroku</a></td>
       <td>Free or paid tiers. One thing to note is that Heroku's file system is ephemeral, so Vapid's <code>type=image</code> directives won't work here.</td>
     </tr>
