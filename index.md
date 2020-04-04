@@ -21,8 +21,6 @@ Currently, Vapid is available through [npm](https://www.npmjs.com/).
 npm install -g @vapid/cli
 ```
 
-_Note: A desktop GUI application is coming soon—please add yourself to [the mailing list](https://www.vapid.com) if you'd like to be notified when that is available._
-
 Once you've installed Vapid, you can create a new website project by using the following terminal command:
 
 ```
