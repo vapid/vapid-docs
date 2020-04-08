@@ -21,8 +21,6 @@ Currently, Vapid is available through [npm](https://www.npmjs.com/).
 npm install -g @vapid/cli
 ```
 
-_Note: A desktop GUI application is coming soon—please add yourself to [the mailing list](https://www.vapid.com) if you'd like to be notified when that is available._
-
 Once you've installed Vapid, you can create a new website project by using the following terminal command:
 
 ```
@@ -36,7 +34,7 @@ cd path/to/project/folder
 vapid start .
 ```
 
-Now, you can start developing. Open `path/to/project/folder` in your favorite text editor (see below for what file/folders are important). And preview your website: the public-facing site at `http://localhost:4567`; and the private dashboard at `http://localhost:4567/dashboard`.
+Now, you can start developing. Open `path/to/project/folder` in your favorite text editor (see below for what file/folders are important). And preview your website: the public-facing site at `http://localhost:3000`; and the private dashboard at `http://localhost:3000/dashboard`.
 
 ## 3 Things You Should Know {#basics}
 
