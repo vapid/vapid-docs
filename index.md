@@ -86,6 +86,8 @@ One of the more useful parameters you can pass in is called `type`, which lets y
 
 There's no need to get bogged down in the details of all field possibilities right now. You can reference them later in the [Content Types](/content-types) section. For now, just understand that they help you: 1) render content on the front-end; and 2) specify what inputs the user will see in the dashboard.
 
+You can also use template tags in RSS, XML, and JSON files to create RSS/JSON feeds and sitemaps.
+
 #### Organizing Content into Sections
 
 As you start adding tags to your website, you'll probably want to organize how inputs are grouped in the dashboard. For example, you may want to separate fields for the About Us page from welcome message. To do this, you can use `#section` tags.
